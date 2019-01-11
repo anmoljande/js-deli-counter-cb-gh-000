@@ -26,7 +26,7 @@ function currentLine(arr)
   var str="The line is currently: ";
   for(var i=0;i<arr.length;i++)
   {
-  if(counter<arr.length)
+  if(counter<=arr.length)
    str=str+(i+1)+". " + arr[i]+", ";
    else
    {

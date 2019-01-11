@@ -22,6 +22,8 @@ function nowServing(arr)
 
 function currentLine(arr)
 {
+  if(arr.length===0)
+  return "The line is currently empty.";
    var counter=0;
   var str="The line is currently: ";
   for(var i=0;i<arr.length;i++)

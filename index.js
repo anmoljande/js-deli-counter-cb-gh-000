@@ -22,13 +22,21 @@ function nowServing(arr)
 
 function currentLine(arr)
 {
-  var str="The line is currently:";
+   var counter=0;
+  var str="The line is currently: ";
   for(var i=0;i<arr.length;i++)
   {
+  if(counter<arr.length)
    str=str+(i+1)+". " + arr[i]+", ";
+   else
+   {
+        str=str+(i+1)+". " + arr[i];
+
+   }
     console.log(str);
+  counter++;  
+    
   }
-  
   return str;
   
 }
